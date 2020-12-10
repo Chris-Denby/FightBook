@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/background2"
+        android:layout_width="350dp"
+        android:layout_height="620dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout" />
+
+    <View
+        android:id="@+id/background3"
+        android:layout_width="330dp"
+        android:layout_height="550dp"
+        android:background="@layout/roundcorner_layout_black"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/background2"
+        app:layout_constraintEnd_toEndOf="@+id/background2"
+        app:layout_constraintStart_toStartOf="@+id/background2"
+        app:layout_constraintTop_toTopOf="@+id/background2" />
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="330dp"
+        android:layout_height="550dp"
+        android:background="@layout/roundcorner_layout_theme_bg"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/background2"
+        app:layout_constraintEnd_toEndOf="@+id/background2"
+        app:layout_constraintStart_toStartOf="@+id/background2"
+        app:layout_constraintTop_toTopOf="@+id/background2" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chevron" />
+
+    <TextView
+        android:id="@+id/winner_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Winner"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/winnerAvatar"
+        app:layout_constraintEnd_toEndOf="@+id/winnerAvatar"
+        app:layout_constraintStart_toStartOf="@+id/winnerAvatar" />
+
+    <ImageView
+        android:id="@+id/winnerAvatar"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="120dp"
+        android:background="@android:color/holo_red_light"
+        android:elevation="10dp"
+        android:padding="5dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background" />
+
+    <TextView
+        android:id="@+id/winnerNickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="#winner nickname#"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/winner_points_label"
+        app:layout_constraintStart_toStartOf="@+id/winner_points_label"
+        app:layout_constraintTop_toBottomOf="@+id/winnerAvatar" />
+
+    <TextView
+        android:id="@+id/winnerSystemLabel"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="#system#"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/winnerAvatar"
+        app:layout_constraintStart_toStartOf="@+id/winnerAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/winner_points_label" />
+
+    <TextView
+        android:id="@+id/loser_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loser"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/loserAvatar"
+        app:layout_constraintEnd_toEndOf="@+id/loserAvatar"
+        app:layout_constraintStart_toStartOf="@+id/loserAvatar" />
+
+    <ImageView
+        android:id="@+id/loserAvatar"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="70dp"
+        android:background="@color/holo_blue_light"
+        android:elevation="10dp"
+        android:padding="5dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background" />
+
+    <TextView
+        android:id="@+id/loserNickNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="#winner nickname#"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/loser_points_label"
+        app:layout_constraintStart_toStartOf="@+id/loser_points_label"
+        app:layout_constraintTop_toBottomOf="@+id/loserAvatar" />
+
+    <TextView
+        android:id="@+id/loserSystemLabel"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="#system#"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/loserAvatar"
+        app:layout_constraintStart_toStartOf="@+id/loserAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/loser_points_label" />
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="135dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/holo_blue_light"
+        android:backgroundTintMode="src_over"
+        android:text="CLOSE"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/background" />
+
+    <TextView
+        android:id="@+id/winner_points_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 pts"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/winnerSystemLabel"
+        app:layout_constraintStart_toStartOf="@+id/winnerSystemLabel"
+        app:layout_constraintTop_toBottomOf="@+id/winnerNickName" />
+
+    <TextView
+        android:id="@+id/loser_points_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 pts"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/loserSystemLabel"
+        app:layout_constraintStart_toStartOf="@+id/loserSystemLabel"
+        app:layout_constraintTop_toBottomOf="@+id/loserNickNameLabel" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/black"
+        android:paddingLeft="3dp"
+        android:text="Points Scored"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/winner_table"
+        app:layout_constraintStart_toStartOf="@+id/xpEarned" />
+
+    <TableLayout
+        android:id="@+id/winner_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="115dp"
+        app:layout_constraintStart_toStartOf="@+id/textView34"
+        app:layout_constraintTop_toBottomOf="@+id/winnerAvatar">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="Cuts"
+                android:textAlignment="center"
+                android:textColor="@color/light_blue"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="Thrusts"
+                android:textAlignment="center"
+                android:textColor="@color/light_blue"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/winnerHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Head:"
+                android:textAlignment="textStart"
+                android:textColor="@color/light_blue"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/winner_head_cuts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/winner_head_thrusts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/winnerTorso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Torso:"
+                android:textAlignment="textStart"
+                android:textColor="@color/light_blue"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/winner_torso_cuts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/winner_torso_thrusts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/winnerLimb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limbs:"
+                android:textAlignment="textStart"
+                android:textColor="@color/light_blue"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/winner_limb_cuts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/winner_limb_thrusts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/loser_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView34"
+        app:layout_constraintTop_toTopOf="@+id/winner_table">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="Cuts"
+                android:textAlignment="center"
+                android:textColor="@color/light_blue"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="Thrusts"
+                android:textColor="@color/light_blue"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/loserHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Head:"
+                android:textAlignment="textStart"
+                android:textColor="@color/light_blue"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/loser_head_cuts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/loser_head_thrusts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/loserTorso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Torso:"
+                android:textAlignment="textStart"
+                android:textColor="@color/light_blue"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/loser_torso_cuts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/loser_torso_thrusts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/loserLimb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limbs:"
+                android:textAlignment="textStart"
+                android:textColor="@color/light_blue"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/loser_limb_cuts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/loser_limb_thrusts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/xpEarned"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:paddingLeft="3dp"
+        android:text="Awards Earned"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toBottomOf="@+id/winner_table" />
+
+    <GridView
+        android:id="@+id/awardsGrid"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toBottomOf="@+id/xpEarned">
+
+    </GridView>
+
+    <Button
+        android:id="@+id/fbShare"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/closeButton"
+        app:layout_constraintStart_toEndOf="@+id/closeButton"
+        app:layout_constraintTop_toTopOf="@+id/closeButton" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background" />
+
+    <Button
+        android:id="@+id/photoButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/ic_menu_camera"
+        app:layout_constraintBottom_toBottomOf="@+id/closeButton"
+        app:layout_constraintEnd_toStartOf="@+id/closeButton"
+        app:layout_constraintTop_toTopOf="@+id/closeButton" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:srcCompat="@drawable/biglogo" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="226dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:srcCompat="@drawable/logotype" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

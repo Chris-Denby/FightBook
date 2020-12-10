@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="@color/white">
+
+  <TextView
+      android:id="@+id/realnameLabel"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:baselineAligned="false"
+      android:text="real name"
+      android:textStyle="italic"
+      app:layout_constraintBottom_toBottomOf="@+id/avatarBubble"
+      app:layout_constraintEnd_toEndOf="@+id/nicknameLabel"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/nicknameLabel"
+      app:layout_constraintTop_toBottomOf="@+id/nicknameLabel" />
+
+  <TextView
+      android:id="@+id/nicknameLabel"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_marginStart="8dp"
+      android:fontFamily="sans-serif-condensed"
+      android:paddingTop="4dp"
+      android:text="Nickname"
+      android:textColor="@color/black"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/avatarBubble"
+      app:layout_constraintTop_toTopOf="@+id/avatarBubble" />
+
+  <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/avatarBubble"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp"
+      android:scaleType="centerCrop"
+      android:src="@color/silver"
+      app:civ_border_width="0dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/followerBubble"
+      android:layout_width="15dp"
+      android:layout_height="15dp"
+      android:layout_marginEnd="2dp"
+      android:layout_marginBottom="2dp"
+      android:scaleType="centerCrop"
+      android:src="@color/holo_orange"
+      android:visibility="invisible"
+      app:civ_border_color="#FFFFFF"
+      app:civ_border_width="2dp"
+      app:layout_constraintBottom_toBottomOf="@+id/avatarBubble"
+      app:layout_constraintEnd_toEndOf="@+id/avatarBubble" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

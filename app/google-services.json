@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "237798308108",
+    "firebase_url": "https://fightbook-ce395.firebaseio.com",
+    "project_id": "fightbook-ce395",
+    "storage_bucket": "fightbook-ce395.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237798308108:android:4094f4e28d7207aa863129",
+        "android_client_info": {
+          "package_name": "com.example.fightbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237798308108-uct5iurg30ehhmj4os6j1aej9kiuvoop.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fightbook",
+            "certificate_hash": "c63ddcd23777814d182921890845da61769aae24"
+          }
+        },
+        {
+          "client_id": "237798308108-6cbcjqh9p25knidpmmio8tvrjvti16uh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC244YcpLLJw9U2AfwqSKRfAPAJq235lKs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237798308108-6cbcjqh9p25knidpmmio8tvrjvti16uh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

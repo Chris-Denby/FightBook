@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:elevation="2dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatarBubble"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/circle_layout_red"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/biglogo"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/name_label_1"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="8dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/avatarBubble"
+        app:layout_constraintStart_toEndOf="@+id/avatarBubble"
+        app:layout_constraintTop_toTopOf="@+id/avatarBubble" />
+
+    <TextView
+        android:id="@+id/event_text_label7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:text="FightBook is social media app for HEMA fencers where users are potential opponents and post are created by completing fights with other users"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/name_label_1"
+        app:layout_constraintTop_toBottomOf="@+id/name_label_1" />
+
+    <TextView
+        android:id="@+id/event_text_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:text="Getting Started"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/name_label_1"
+        app:layout_constraintTop_toBottomOf="@+id/event_text_label7" />
+
+    <Button
+        android:id="@+id/find_friends_button"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@layout/roundcorner_layout"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Find friends"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/event_text_label8" />
+
+    <TextView
+        android:id="@+id/event_text_label2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:text="Find friends to follow from the FENCERS tab"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/event_text_label"
+        app:layout_constraintTop_toBottomOf="@+id/event_text_label" />
+
+    <TextView
+        android:id="@+id/event_text_label3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:text="Challenge a fencer to a fight"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/event_text_label"
+        app:layout_constraintTop_toBottomOf="@+id/event_text_label2" />
+
+    <TextView
+        android:id="@+id/event_text_label4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:text="Complete a fight to create a post"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/event_text_label3"
+        app:layout_constraintStart_toStartOf="@+id/event_text_label3"
+        app:layout_constraintTop_toBottomOf="@+id/event_text_label3" />
+
+    <TextView
+        android:id="@+id/event_text_label5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:text="Like posts"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/event_text_label3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/event_text_label3"
+        app:layout_constraintTop_toBottomOf="@+id/event_text_label4" />
+
+    <TextView
+        android:id="@+id/event_text_label6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:text="Comment on posts"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/event_text_label3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/event_text_label3"
+        app:layout_constraintTop_toBottomOf="@+id/event_text_label5" />
+
+    <TextView
+        android:id="@+id/event_text_label8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:text="Track performance from your profile"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/event_text_label6"
+        app:layout_constraintTop_toBottomOf="@+id/event_text_label6" />
+
+    <ImageView
+        android:id="@+id/icon_1"
+        android:layout_width="31dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/event_text_label2"
+        app:layout_constraintEnd_toStartOf="@+id/event_text_label2"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/event_text_label2" />
+
+    <ImageView
+        android:id="@+id/icon_2"
+        android:layout_width="31dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/event_text_label3"
+        app:layout_constraintEnd_toStartOf="@+id/event_text_label3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/event_text_label3" />
+
+    <ImageView
+        android:id="@+id/icon_3"
+        android:layout_width="31dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/event_text_label4"
+        app:layout_constraintEnd_toStartOf="@+id/event_text_label4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/event_text_label4" />
+
+    <ImageView
+        android:id="@+id/icon_4"
+        android:layout_width="31dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/event_text_label5"
+        app:layout_constraintEnd_toStartOf="@+id/event_text_label5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/event_text_label5" />
+
+    <ImageView
+        android:id="@+id/icon_5"
+        android:layout_width="32dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/event_text_label6"
+        app:layout_constraintEnd_toStartOf="@+id/event_text_label6"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/event_text_label6" />
+
+    <ImageView
+        android:id="@+id/icon_6"
+        android:layout_width="32dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/event_text_label8"
+        app:layout_constraintEnd_toStartOf="@+id/event_text_label6"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/event_text_label8" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

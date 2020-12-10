@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:background="@color/white"
+    tools:layout_editor_absoluteY="25dp">
+
+
+  <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/avatarBubble"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="4dp"
+      android:gravity="center"
+      android:scaleType="centerCrop"
+      android:src="@color/silver"
+      android:textColor="@color/black"
+      android:textSize="10sp"
+      android:textStyle="bold"
+      app:civ_border_color="#FFFFFF"
+      app:civ_border_width="0dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <TextView
+      android:id="@+id/event_text_label"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:baselineAligned="false"
+      android:gravity="center"
+      android:text="has challenged you"
+      android:textAlignment="textStart"
+      android:textColor="@color/black"
+      android:textSize="14sp"
+      app:layout_constraintBottom_toBottomOf="@+id/avatarBubble"
+      app:layout_constraintEnd_toStartOf="@+id/action_button"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/avatarBubble"
+      app:layout_constraintTop_toTopOf="@+id/avatarBubble"
+      app:layout_constraintVertical_bias="0.25" />
+
+  <TextView
+      android:id="@+id/event_date_label"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="TextView"
+      android:textSize="10sp"
+      app:layout_constraintStart_toStartOf="@+id/event_text_label"
+      app:layout_constraintTop_toBottomOf="@+id/event_text_label" />
+
+  <Button
+      android:id="@+id/action_button"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:layout_marginEnd="30dp"
+      android:background="@drawable/challenge_toaccept_icon"
+      android:textSize="8sp"
+      app:layout_constraintBottom_toTopOf="@+id/button_bar"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <RelativeLayout
+      android:id="@+id/button_bar"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:layout_marginTop="16dp"
+      android:background="@color/white"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/event_text_label">
+
+
+    <Button
+        android:id="@+id/chatButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:text="chat"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/reject_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="2dp"
+        android:text="cancel"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+  </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
